@@ -1,0 +1,19 @@
+[masters]
+master-1 ansible_host=192.168.70.10
+master-2 ansible_host=192.168.70.11
+
+[workers]
+worker-1 ansible_host=192.168.70.15
+worker-2 ansible_host=192.168.70.16
+
+[loadbalancer]
+loadbalancer ansible_host=192.168.70.20
+
+[influxDB]
+influxDB ansible_host=192.168.70.21
+
+
+[all:vars]
+ansible_connection=ssh 
+ansible_ssh_user=vagrant 
+ansible_ssh_pass=vagrant
