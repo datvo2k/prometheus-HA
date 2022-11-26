@@ -13,7 +13,7 @@ sudo -H pip install ansible
 # Run Ansible playbooks
 echo -e "\nRUNNING ANSIBLE [clusters.yml] **************************************************\n"
 ansible-playbook -i hosts clusters.yml
-echo -e "\nRUNNING ANSIBLE [master.yml] ***************************************************\n"
-ansible-playbook -i hosts master.yml
-echo -e "\nRUNNING ANSIBLE [join.yml] *****************************************************\n"
-ansible-playbook -i hosts join.yml
+echo -e "\nRUNNING ANSIBLE [master/main.yml] ***************************************************\n"
+ansible-playbook -i hosts master/main.yml
+echo -e "\nRUNNING ANSIBLE [join_cluster/main.yml] *****************************************************\n"
+ansible-playbook -i hosts join_cluster/main.yml
